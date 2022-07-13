@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <input type="radio" name="slider" checked id="ex1">
+      <input type="radio" name="slider" id="ex2">
+      <input type="radio" name="slider" id="ex3">
+      <input type="radio" name="slider" id="ex4">
+      <input type="radio" name="slider" id="ex5">
+      <input type="radio" name="slider" id="ex6">
+      <input type="radio" name="slider" id="ex7">
+      <input type="radio" name="slider" id="ex8">
+      <div class="list">
+        <label for="ex1" class="ex1">
+        <span class="title">Exercise 1</span>
+      </label>
+      <label for="ex2" class="ex2">
+        <span class="title">Exercise 2</span>
+      </label>
+      <label for="ex3" class="ex3">
+        <span class="title">Exercise 3</span>
+      </label>
+      <label for="ex4" class="ex4">
+        <span class="title">Exercise 4</span>
+      </label>
+      <label for="ex5" class="ex5">
+        <span class="title">Exercise 5</span>
+      </label>
+      <label for="ex6" class="ex6">
+        <span class="title">Exercise 6</span>
+      </label>
+      <label for="ex7" class="ex7">
+        <span class="title">Exercise 7</span>
+      </label>
+      <label for="ex8" class="ex8">
+        <span class="title">Exercise 8</span>
+      </label>
+      <div class="slider"></div>
+    </div>
+
+      <div class="text-content">
+        <div class="ex1 text">
+          <div class="title">
+            Salary
+            <div class="container">
+              <div class="top">
+                <h2>outline</h2>
+                <p>
+                    <strong>input:</strong><br>
+                        n1<br>
+                        n2<br>
+                        n3<br>
+                      <strong>Process</strong> <br>
+                        get value n1 n2 n3<br>
+                        comparison n1 n2 n3<br>
+                      <strong>output:</strong><br>
+                      n1< n2 < n3 <br> or n1> n2 > n3
+                      or n2 < n3 < n1.....
+                </p>
+              </div>
+            </div>
+            <div class="container-bot">
+              <div class="row">
+                <div class="col">
+                  <input value="" class="count-box" id="num1" type="text" placeholder="fisrt number">
+                  <input value="" class="count-box" id="num2" type="text" placeholder="second number">
+                  <input value="" class="count-box" id="num3" type="text" placeholder="third number">
+                </div>
+                <button onclick="comparison()">const</button>
+                <input class="box-count const-result" id="cresult" value="" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex2 text">
+          <div class="title">
+            ....
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                <strong>input:</strong><br>
+                choose one of the values<br>
+                <br>
+              <strong>Process + output</strong> <br>
+              get values selected<br>
+              father = hello father<br>
+              mother = hello mother<br>
+              sister = hello sister<br>
+              brother = hello brother
+              </p>
+            </div>
+          </div>
+          
+          <div class="container-bot">
+
+            <div class="row-">
+              <div class="col-1">
+                <select name="" id="list" >
+                  <option value="1">Father</option>
+                  <option value="2">Mother</option>
+                  <option value="3">Sister</option>
+                  <option value="4">Brother</option>
+                </select>
+                <button onclick="hello()">Gửi lời chào</button>
+              </div>
+              <input class="box-count hiresult" id="hirt" value="" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="ex3 text">
+          <div class="title">
+            currency exchange
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                  <strong>input:</strong><br>
+                  USD<br>
+                  Rate_exchange<br>
+                  VND<br>
+                    <strong>process:</strong> pseudo code<br>
+                    1.get input value<br>
+                    2.vnd=usd*rate_exchange<br>
+                    <strong>output:</strong><br>
+                    VND<br>
+              </p>
+            </div>
+          </div>
+          <div class="container-bot">
+
+            <div class="row">
+              <div class="col">
+                <input value="" class="count-box" id="num1"type="text"placeholder="fisrt number">
+                <input value="" class="count-box"id="num2" type="text"placeholder="second number">
+                <input value="" class="count-box"id="num3" type="text"placeholder="third number">
+              </div>
+              <button onclick="chanle()">const</button>
+              <input class="box-count const-result" id="c" value="" type="text">
+            </div>
+          </div>
+              <!-- <input type="text" class="box-count"id="usd" value="" placeholder="USD">
+              
+              <button onclick="currency()">Count</button>
+              <input class="box-count box-result" id="vnd" value="" type="text" placeholder="VND"> -->
+          
+        </div>
+        <div class="ex4 text">
+          <div class="title">
+            Calculate the area and perimeter of the rectangle
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                  <strong>input:</strong><br>
+                  a<br>
+                  b<br>
+                  c<br>
+                 
+          
+                    <strong>process:</strong> pseudo code<br>
+                    a/2 == 0 even ++<br>
+                    b/2== 0 even ++<br>
+                    c/2== 0 even ++<br>
+                    <strong>output:</strong><br>
+                    count even and odd<br>
+                    <br>
+              </p>
+            </div>
+          </div>
+          <div class="container-bot">
+            <div class="row">
+              <div class="col">
+                <input value="" class="count-box"id="numa" type="text"placeholder="length of first side">
+                <input value="" class="count-box"id="numb" type="text"placeholder="length of second side">
+                <input value="" class="count-box"id="numc" type="text"placeholder="length of third side">
+              </div>
+              <button onclick="">guess</button>
+              <input class="box-count const-result" id="Result" value="" type="text">
+            </div>
+          </div>
+          <!-- <div class="col ex2-col">
+            <input type="text" class="box-count"id="width" value="" placeholder="Width">
+            <input type="text" class="box-count" id="long" value="" placeholder="Long">
+          </div>
+          <button onclick="area_perimeter()">Count</button>
+          <input class="box-count box-result" type="text" id="area" placeholder="acreage">
+          <input class="box-count box-result" type="text" id="perimeter" placeholder="perimeter">
+          
+        </div> -->
+        </div>
+        <div class="ex5 text">
+          <div class="title">
+            Salary
+            <div class="container">
+              <div class="top">
+                <h2>outline</h2>
+                <p>
+                    <strong>input:</strong><br>
+                        <br>
+                        <br>
+                      <strong>Process  </strong> <br>
+                      <br>
+                      <br>
+                      <br>
+
+                      <strong>output:</strong><br>
+                      <br>
+                </p>
+              </div>
+            </div>
+            <div class="container-bot">
+              <div class="row">
+                <div class="col">
+                  <input value="" class="count-box" type="number"placeholder="date">
+                  <input value="" class="count-box" type="number"placeholder="month">
+                  <input value="" class="count-box" type="number"placeholder="year">
+                </div>
+                <button onclick="">Yesterday</button>
+                <button onclick="">Tomorrow</button>
+                <input class="box-count const-result" id="Result" value="" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex6 text">
+          <div class="title">
+            Salary
+            <div class="container">
+              <div class="top">
+                <h2>outline</h2>
+                <p>
+                    <strong>input:</strong><br>
+                        <br>
+                        <br>
+                      <strong>Process  </strong> <br>
+                      <br>
+                      <br>
+                      <br>
+
+                      <strong>output:</strong><br>
+                      <br>
+                </p>
+              </div>
+            </div>
+            <div class="container-bot">
+              <div class="row">
+                <div class="col">
+                  <input value="" class="count-box" type="text"placeholder="month">
+                  <input value="" class="count-box" type="text"placeholder="year">
+                </div>
+                <button onclick="">Count days</button>
+                <input class="box-count const-result" id="Result" value="" type="text">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="ex7 text">
+          <div class="title">
+            Salary
+            <div class="container">
+              <div class="top">
+                <h2>outline</h2>
+                <p>
+                    <strong>input:</strong><br>
+                        <br>
+                        <br>
+                      <strong>Process  </strong> <br>
+                      <br>
+                      <br>
+                      <br>
+
+                      <strong>output:</strong><br>
+                      <br>
+                </p>
+              </div>
+            </div>
+            <div class="container-bot">
+              <div class="row">
+                <div class="col">
+                  <input value="" class="count-box" type="number"placeholder="input number">
+                </div>
+                <button onclick="">read</button>
+                <input class="box-count const-result" id="Result" value="" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex8 text">
+          <div class="title">
+            Salary
+            <div class="container">
+              <div class="top">
+                <h2>outline</h2>
+                <p>
+                    <strong>input:</strong><br>
+                        <br>
+                        <br>
+                      <strong>Process  </strong> <br>
+                      <br>
+                      <br>
+                      <br>
+
+                      <strong>output:</strong><br>
+                      <br>
+                </p>
+              </div>
+            </div>
+            <div class="container-bot">
+              <div class="row">
+                <h3 class="student">Student 1</h3>
+                <div class="col col-1">
+                  <input value="" class="count-box" type="number"placeholder="Name">
+                  <input value="" class="count-box" type="number"placeholder="X">
+                  <input value="" class="count-box" type="number"placeholder="Y">
+                
+                </div>
+                <h3 class="student">Student 1</h3>
+                <div class="col col-1">
+                  <input value="" class="count-box" type="number"placeholder="Name">
+                  <input value="" class="count-box" type="number"placeholder="X">
+                  <input value="" class="count-box" type="number"placeholder="Y">
+                </div>
+                <h3 class="student">Student 1</h3>
+                <div class="col col-1">
+                  <input value="" class="count-box" type="number"placeholder="Name">
+                  <input value="" class="count-box" type="number"placeholder="X">
+                  <input value="" class="count-box" type="number"placeholder="Y">
+                </div>
+                <h3 class="student">School</h3>
+                <div class="col col-1">
+                  <input value="" class="count-box" type="number"placeholder="X">
+                  <input value="" class="count-box" type="number"placeholder="Y">
+                </div>
+                <button onclick="">Tomorrow</button>
+                <input class="box-count const-result" id="Result" value="" type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
