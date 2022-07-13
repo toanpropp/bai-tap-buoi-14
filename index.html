@@ -125,16 +125,20 @@
             <div class="top">
               <h2>outline</h2>
               <p>
-                  <strong>input:</strong><br>
-                  USD<br>
-                  Rate_exchange<br>
-                  VND<br>
-                    <strong>process:</strong> pseudo code<br>
-                    1.get input value<br>
-                    2.vnd=usd*rate_exchange<br>
-                    <strong>output:</strong><br>
-                    VND<br>
-              </p>
+                <strong>input:</strong><br>
+                a<br>
+                b<br>
+                c<br>
+               
+        
+                  <strong>process:</strong> pseudo code<br>
+                  a/2 == 0 even ++<br>
+                  b/2== 0 even ++<br>
+                  c/2== 0 even ++<br>
+                  <strong>output:</strong><br>
+                  count even and odd<br>
+                  <br>
+            </p>
             </div>
           </div>
           <div class="container-bot">
@@ -170,12 +174,15 @@
                  
           
                     <strong>process:</strong> pseudo code<br>
-                    a/2 == 0 even ++<br>
-                    b/2== 0 even ++<br>
-                    c/2== 0 even ++<br>
+                    a===b && a===c && b === c<br>
+                    a===b && b === c<br>
+                    (a*a)==(b*b)+(c*c) && b*b==(a*a)+(c*c) && (c*c)==(a*a)+(b*b)<br>
                     <strong>output:</strong><br>
-                    count even and odd<br>
-                    <br>
+                    isosceles triangle<br>
+                    right triangle<br>
+                    equilateral triangle<br>
+                    obstu triangle<br>
+                    
               </p>
             </div>
           </div>
@@ -186,8 +193,8 @@
                 <input value="" class="count-box"id="numb" type="text"placeholder="length of second side">
                 <input value="" class="count-box"id="numc" type="text"placeholder="length of third side">
               </div>
-              <button onclick="">guess</button>
-              <input class="box-count const-result" id="Result" value="" type="text">
+              <button onclick="triangel()">guess</button>
+              <input class="box-count const-result" id="triangle" value="" type="text">
             </div>
           </div>
           <!-- <div class="col ex2-col">

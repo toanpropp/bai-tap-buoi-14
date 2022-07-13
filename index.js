@@ -55,3 +55,30 @@ function chanle(){
     odd = 3 - event;
     var cr= document.getElementById("c").value = d+ event + e + odd + f;
 }
+function triangel(){
+    var a = document.getElementById("numa").value;
+    var b = document.getElementById("numb").value;
+    var c = document.getElementById("numc").value;
+    var can = ("isosceles triangle")
+    var vuong = ("right triangle")
+    var deu = ("equilateral triangle")
+    var tu = ("obstu triangle")
+    var none= ("do you thing it is a triangle?")
+    
+        if(a==b && b==c && c==a){
+            var t = document.getElementById("triangle").value = deu;
+        }else if (a==b && a!==c || a==c && a!==b ||b==a && b!==c ||b==c && b!==a){
+            var t = document.getElementById("triangle").value = can;
+        }
+        else if(a*a == b*b + c*c || b*b==a*a+c*c || c*c==a*a+b*b){
+            var t = document.getElementById("triangle").value = vuong;
+        }else if(a*a > b*b+c*c || b*b > a*a+c*c || c*c > a*a+b*b){
+            var t = document.getElementById("triangle").value = tu;
+        }
+        else{
+            var t = document.getElementById("triangle").value = none;
+
+        }
+    
+
+}
