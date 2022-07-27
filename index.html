@@ -209,66 +209,41 @@
         </div>
         <div class="ex5 text">
           <div class="title">
-            Salary
+            Calculate Date and Time
             <div class="container">
-              <div class="top">
-                <h2>outline</h2>
-                <p>
-                    <strong>input:</strong><br>
-                        <br>
-                        <br>
-                      <strong>Process  </strong> <br>
-                      <br>
-                      <br>
-                      <br>
-
-                      <strong>output:</strong><br>
-                      <br>
-                </p>
-              </div>
-            </div>
+              
+            
             <div class="container-bot">
               <div class="row">
                 <div class="col">
-                  <input value="" class="count-box" type="number"placeholder="date">
-                  <input value="" class="count-box" type="number"placeholder="month">
-                  <input value="" class="count-box" type="number"placeholder="year">
+                  <input value="" class="count-box" type="number"placeholder="date" id="inputDay">
+                  <input value="" class="count-box" type="number"placeholder="month"id="inputMonth">
+                  <input value="" class="count-box" type="number"placeholder="year" id="inputYear">
                 </div>
-                <button onclick="">Yesterday</button>
-                <button onclick="">Tomorrow</button>
-                <input class="box-count const-result" id="Result" value="" type="text">
+                <button id="btnYesterday" onclick="">Yesterday</button>
+                <button id="btnTomorrow" onclick="">Tomorrow</button>
+                <!-- <input class="box-count const-result" id="Result" value="" type="text"> -->
+                <span id="txtDate" class="box-count const-result span"></span>
               </div>
             </div>
+          </div>
           </div>
         </div>
         <div class="ex6 text">
           <div class="title">
-            Salary
+            Calculate date
             <div class="container">
-              <div class="top">
-                <h2>outline</h2>
-                <p>
-                    <strong>input:</strong><br>
-                        <br>
-                        <br>
-                      <strong>Process  </strong> <br>
-                      <br>
-                      <br>
-                      <br>
-
-                      <strong>output:</strong><br>
-                      <br>
-                </p>
-              </div>
-            </div>
-            <div class="container-bot">
-              <div class="row">
-                <div class="col">
-                  <input value="" class="count-box" type="text"placeholder="month">
-                  <input value="" class="count-box" type="text"placeholder="year">
+              
+              
+              <div class="container-bot">
+                <div class="row">
+                  <div class="col">
+                    <input value="" class="count-box" type="text"placeholder="month" id="inputMonth2">
+                    <input value="" class="count-box" type="text"placeholder="year" id="inputYear2">
+                  </div>
+                  <button onclick="Caldate()">Count days</button>
+                  <span id="txtCalcDay" class="box-count const-result span"></span>
                 </div>
-                <button onclick="">Count days</button>
-                <input class="box-count const-result" id="Result" value="" type="text">
               </div>
             </div>
             
@@ -276,84 +251,56 @@
         </div>
         <div class="ex7 text">
           <div class="title">
-            Salary
+            Read number
             <div class="container">
-              <div class="top">
-                <h2>outline</h2>
-                <p>
-                    <strong>input:</strong><br>
-                        <br>
-                        <br>
-                      <strong>Process  </strong> <br>
-                      <br>
-                      <br>
-                      <br>
-
-                      <strong>output:</strong><br>
-                      <br>
-                </p>
-              </div>
-            </div>
-            <div class="container-bot">
-              <div class="row">
-                <div class="col">
-                  <input value="" class="count-box" type="number"placeholder="input number">
+              
+              <div class="container-bot">
+                <div class="row">
+                  <div class="col">
+                    <input value="" class="count-box" type="number"placeholder="input number" id="ReadNum">
+                  </div>
+                  <button onclick="readNumber()">read</button>
+                  <span id="txtReadInt" class="box-count const-result span"></span>
                 </div>
-                <button onclick="">read</button>
-                <input class="box-count const-result" id="Result" value="" type="text">
               </div>
             </div>
           </div>
         </div>
         <div class="ex8 text">
           <div class="title">
-            Salary
+            Tìm học sinh xa nhất
             <div class="container">
-              <div class="top">
-                <h2>outline</h2>
-                <p>
-                    <strong>input:</strong><br>
-                        <br>
-                        <br>
-                      <strong>Process  </strong> <br>
-                      <br>
-                      <br>
-                      <br>
-
-                      <strong>output:</strong><br>
-                      <br>
-                </p>
-              </div>
-            </div>
-            <div class="container-bot">
-              <div class="row">
-                <h3 class="student">Student 1</h3>
+              
+              <div class="container-bot">
+                <div class="row">
+                  <h3 class="student">Student 1</h3>
+                  <div class="col col-1">
+                    <input value="" class="count-box" type="text"placeholder="Name" id="inputName1">
+                    <input value="" class="count-box" type="number"placeholder="X" id="inputX1">
+                    <input value="" class="count-box" type="number"placeholder="Y" id="inputY1">
+                    
+                  </div>
+                  <h3 class="student">Student 2</h3>
+                  <div class="col col-1">
+                    <input value="" class="count-box" type="text"placeholder="Name" id="inputName2">
+                    <input value="" class="count-box" type="number"placeholder="X" id="inputX2">
+                    <input value="" class="count-box" type="number"placeholder="Y" id="inputY2">
+                  </div>
+                <h3 class="student">Student 3</h3>
                 <div class="col col-1">
-                  <input value="" class="count-box" type="number"placeholder="Name">
-                  <input value="" class="count-box" type="number"placeholder="X">
-                  <input value="" class="count-box" type="number"placeholder="Y">
-                
-                </div>
-                <h3 class="student">Student 1</h3>
-                <div class="col col-1">
-                  <input value="" class="count-box" type="number"placeholder="Name">
-                  <input value="" class="count-box" type="number"placeholder="X">
-                  <input value="" class="count-box" type="number"placeholder="Y">
-                </div>
-                <h3 class="student">Student 1</h3>
-                <div class="col col-1">
-                  <input value="" class="count-box" type="number"placeholder="Name">
-                  <input value="" class="count-box" type="number"placeholder="X">
-                  <input value="" class="count-box" type="number"placeholder="Y">
+                  <input value="" class="count-box" type="text"placeholder="Name" id="inputName3">
+                  <input value="" class="count-box" type="number"placeholder="X" id="inputX3">
+                  <input value="" class="count-box" type="number"placeholder="Y" id="inputY3">
                 </div>
                 <h3 class="student">School</h3>
                 <div class="col col-1">
-                  <input value="" class="count-box" type="number"placeholder="X">
-                  <input value="" class="count-box" type="number"placeholder="Y">
+                  <input value="" class="count-box" type="number"placeholder="X" id="inputX4">
+                  <input value="" class="count-box" type="number"placeholder="Y" id="inputY4">
                 </div>
-                <button onclick="">Tomorrow</button>
-                <input class="box-count const-result" id="Result" value="" type="text">
+                <button id="btnSearch">Tìm</button>
+                <span id="txtSearch" class="box-count const-result span"></span>
               </div>
+            </div>
             </div>
           </div>
         </div>
